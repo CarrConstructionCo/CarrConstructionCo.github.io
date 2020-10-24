@@ -27,10 +27,10 @@ h3, h4, h5, h6, p {
 }
 
 // estimate section
-#estimate {
-    background-color: $oxford-blue;
+#title {
+    background-color: $white;
     h1, p {
-        color: white;
+        color: $oxford-blue;
     }
     .container-fluid {
         padding: 3% 15% 7%;
@@ -38,14 +38,66 @@ h3, h4, h5, h6, p {
     .navbar {
         padding: 1rem 0 4.5rem;
         .navbar-brand {
+            color: $oxford-blue;
             font-family: $JockeyOne;
             font-size: 2rem;
         }
     }
 
+    .contactButtons {
+        margin: 1rem;
+        background-color: $oxford-blue;
+        border: none;
+        i {
+            margin-right: .7rem;
+        }
+    }
+
     .estimateForm {
         margin: 7%;
-        padding: 3%;
-        background-color: aqua;
+        padding: 7%;
+        background-color: $oxford-blue;
+        color: white;
+        box-shadow: $beau-blue 0px 3px 15px;
+        
+        .estimateHeader {
+            place-items: center;
+            font-weight: 800;
+            padding-bottom: 1rem;
+        }
+        input, textarea {
+            background-color: $prussian-blue;
+            border: none;
+            font-family: $Open-Sans, 'FontAwesome';
+            // color: white;
+            &::placeholder {
+                color: $gray-x-11-gray;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+#services {
+    background-color: $onyx;
+    color: white;
+}
+#testimonials {
+    background-color: $white;
+}
+#contact {
+    background-color: $oxford-blue;
+}
+
+// ipad and smaller
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+        .container-fluid {
+            padding: 3% 7% 7%;
+        }
+        .estimateForm {
+            margin: 10% 0 10%;
+        }
     }
 }

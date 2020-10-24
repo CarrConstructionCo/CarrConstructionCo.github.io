@@ -9,26 +9,76 @@ h3, h4, h5, h6, p {
   font-family: "Montserrat", sans-serif;
 }
 
-#estimate {
-  background-color: #061a40;
+#title {
+  background-color: white;
 }
-#estimate h1, #estimate p {
-  color: white;
+#title h1, #title p {
+  color: #061a40;
 }
-#estimate .container-fluid {
+#title .container-fluid {
   padding: 3% 15% 7%;
 }
-#estimate .navbar {
+#title .navbar {
   padding: 1rem 0 4.5rem;
 }
-#estimate .navbar .navbar-brand {
+#title .navbar .navbar-brand {
+  color: #061a40;
   font-family: "Jockey One", sans-serif;
   font-size: 2rem;
 }
-#estimate .estimateForm {
+#title .contactButtons {
+  margin: 1rem;
+  background-color: #061a40;
+  border: none;
+}
+#title .contactButtons i {
+  margin-right: 0.7rem;
+}
+#title .estimateForm {
   margin: 7%;
-  padding: 3%;
-  background-color: aqua;
+  padding: 7%;
+  background-color: #061a40;
+  color: white;
+  box-shadow: #b9d6f2 0px 3px 15px;
+}
+#title .estimateForm .estimateHeader {
+  place-items: center;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+#title .estimateForm input, #title .estimateForm textarea {
+  background-color: #003559;
+  border: none;
+  font-family: "Open Sans", sans-serif, "FontAwesome";
+}
+#title .estimateForm input::placeholder, #title .estimateForm textarea::placeholder {
+  color: #bbbbbf;
+  opacity: 1;
+}
+
+#services {
+  background-color: #3d3d3d;
+  color: white;
+}
+
+#testimonials {
+  background-color: white;
+}
+
+#contact {
+  background-color: #061a40;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  #title .container-fluid {
+    padding: 3% 7% 7%;
+  }
+  #title .estimateForm {
+    margin: 10% 0 10%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

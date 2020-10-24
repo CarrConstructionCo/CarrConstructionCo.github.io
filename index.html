@@ -20,11 +20,11 @@
   </head>
   <body>
     <!-- Title Section -->
-    <section id="estimate">
+    <section id="title">
         <div class="container-fluid">
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a href="#estimate" class="navbar-brand">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#title" class="navbar-brand">
                     CARR
                 </a>
                 <!-- hamburger menu -->
@@ -37,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Estimate</a>
+                            <a href="#estimate" class="nav-link">Estimate</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Services</a>
@@ -57,63 +57,42 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <h1>The Quality, Fast, Affordable Construction to Bring Your Dreams to Life.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reiciendis culpa est corporis. Iure itaque, atque ex consequuntur nostrum similique quidem.</p>
-                    <button type="button" class="btn btn-primary btn-lg">
+                    <p>other text</p>
+                    <button type="button" class="btn btn-primary btn-lg contactButtons">
                         <i class="fas fa-phone"></i>
                         Call
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg">
+                    <button type="button" class="btn btn-primary btn-lg contactButtons">
                         <i class="fas fa-envelope"></i>
                         Email
                     </button>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12" id="estimate">
                     <div class="estimateForm">
-                        <form>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputPassword4">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4">
-                              </div>
+                        <form action="mailto:CarrConstruction.dev@gmail.com" method="POST" enctype="text/plain">
+                            <div class="estimateHeader">
+                                <h3>Get a Free Estimate</h3>
                             </div>
                             <div class="form-group">
-                              <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              <!-- <label for="clientName">Full Name</label> -->
+                              <input type="text" class="form-control" id="clientName" placeholder="&#xF007;    Full Name">
                             </div>
                             <div class="form-group">
-                              <label for="inputAddress2">Address 2</label>
-                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                  <option selected>Choose...</option>
-                                  <option>...</option>
-                                </select>
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                              </div>
+                              <!-- <label for="clientEmail">Email Address</label> -->
+                              <input type="text" class="form-control" id="clientEmail" placeholder="&#xF0E0;    Email Address">
                             </div>
                             <div class="form-group">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
+                              <!-- <label for="clientEmail">Email Address</label> -->
+                              <input type="text" class="form-control" id="clientPhone" placeholder="&#xF095;    Phone Number">
                             </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <div class="form-group">
+                                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="&#xF573;   Your project description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Start My Estimate
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </button>
                           </form>
                     </div>
                 </div>
@@ -123,15 +102,16 @@
     </section>
     <!-- Estimate Section -->
     <section id="services">
+        <p>Experienced construction experts for your next project. We explain the process every step of the way. No matter what you need, we make sure it's done right - the first time. At the most competitve local rates, contact us for an estimate today.</p>
 
     </section>
     <!-- Testimonials Section -->
     <section id="testimonials">
-
+        <p>testimonals</p>
     </section>
     <!-- Contact/Social Media Section -->
     <section id="contact">
-
+        <p>contact</p>
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
