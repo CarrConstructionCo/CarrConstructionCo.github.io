@@ -1,5 +1,9 @@
 /* SCSS RGB */
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat&family=Open+Sans:wght@400;700;800&family=Roboto&display=swap");
+body {
+  text-align: center;
+}
+
 h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -7,6 +11,26 @@ h1, h2 {
 
 h3, h4, h5, h6, p {
   font-family: "Montserrat", sans-serif;
+}
+
+.white-text {
+  color: white;
+}
+
+.blue-text {
+  color: #061a40;
+}
+
+.big-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #title {
@@ -57,12 +81,29 @@ h3, h4, h5, h6, p {
 }
 
 #services {
-  background-color: #3d3d3d;
-  color: white;
+  background-color: #061a40;
+  padding: 3% 15% 7%;
+}
+#services .service-col {
+  padding: 3% 2%;
+}
+#services .card {
+  height: 335px;
+}
+#services .card-title {
+  color: black;
+}
+#services .card-img-top {
+  height: 200px;
+  padding: 5%;
+}
+#services .service-images {
+  width: 150px;
+  height: auto;
 }
 
 #testimonials {
-  background-color: white;
+  background-color: #3d3d3d;
 }
 
 #contact {

@@ -17,13 +17,34 @@ $Open-Sans: 'Open Sans', sans-serif;
 $Roboto: 'Roboto', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 $JockeyOne: 'Jockey One', sans-serif;
-
+body {
+    text-align: center;
+}
 h1, h2 {
     font-family: $Open-Sans;
     font-weight: 700;
 }
 h3, h4, h5, h6, p {
     font-family: $Montserrat;
+}
+// text colors
+.white-text {
+    color: white;
+}
+.blue-text {
+    color: $oxford-blue;
+}
+
+// headings
+.big-heading {
+    font-family: $Open-Sans;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 // estimate section
@@ -79,11 +100,32 @@ h3, h4, h5, h6, p {
     }
 }
 #services {
-    background-color: $onyx;
-    color: white;
+    background-color: $oxford-blue;
+    padding: 3% 15% 7%;
+    .service-heading-text {
+
+    }
+    .service-col {
+        padding: 3% 2%;
+    }
+    .card {
+        height: 335px;
+    }
+    .card-title {
+        color: black;
+    }
+    .card-img-top {
+        height: 200px;
+        padding: 5%;
+    }
+    .service-images {
+        width: 150px;
+        height: auto;
+    }
+    
 }
 #testimonials {
-    background-color: $white;
+    background-color: $onyx;
 }
 #contact {
     background-color: $oxford-blue;
