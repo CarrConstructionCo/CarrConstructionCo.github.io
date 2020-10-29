@@ -1,15 +1,27 @@
 // Color Palette
+/* SCSS HEX */
+$oxford-blue: #061a40ff;
+$prussian-blue: #003559ff;
+$usafa-blue: #0353a4ff;
+$honolulu-blue: #006daaff;
+$beau-blue: #b9d6f2ff;
+$onyx: #3d3d3dff;
+$davys-grey: #5a5e5eff;
+$gray-web: #808889ff;
+$gray-x-11-gray: #bbbbbfff;
+$white: #ffffffff;
 /* SCSS RGB */
-$oxford-blue: rgba(6, 26, 64, 1);
-$prussian-blue: rgba(0, 53, 89, 1);
-$usafa-blue: rgba(3, 83, 164, 1);
-$honolulu-blue: rgba(0, 109, 170, 1);
-$beau-blue: rgba(185, 214, 242, 1);
-$onyx: rgba(61, 61, 61, 1);
-$davys-grey: rgba(90, 94, 94, 1);
-$gray-web: rgba(128, 136, 137, 1);
-$gray-x-11-gray: rgba(187, 187, 191, 1);
-$white: rgba(255, 255, 255, 1);
+// $oxford-blue: rgba(6, 26, 64, 1);
+// $prussian-blue: rgba(0, 53, 89, 1);
+// $usafa-blue: rgba(3, 83, 164, 1);
+// $honolulu-blue: rgba(0, 109, 170, 1);
+// $beau-blue: rgba(185, 214, 242, 1);
+// $onyx: rgba(61, 61, 61, 1);
+// $davys-grey: rgba(90, 94, 94, 1);
+// $gray-web: rgba(128, 136, 137, 1);
+// $gray-x-11-gray: rgba(187, 187, 191, 1);
+// $white: rgba(255, 255, 255, 1);
+$instagram-radial: radial-gradient(#405de6ff, #5851dbff, #833ab4ff, #c13584ff, #e1306cff, #fd1d1dff, #f56040ff, #f77737ff, #fcaf45ff, #ffdc80ff);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat&family=Open+Sans:wght@400;700;800&family=Roboto&display=swap');
@@ -47,15 +59,29 @@ h3, h4, h5, h6, p {
     line-height: 1.5;
 }
 
-// estimate section
+// containers
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+// to top button
+#toTopButton {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: $honolulu-blue;
+    border: none;
+}
+
+// Title Section START
 #title {
     background-color: $white;
     h1, p {
         color: $oxford-blue;
     }
-    .container-fluid {
-        padding: 3% 15% 7%;
-    }
+    
     .navbar {
         padding: 1rem 0 4.5rem;
         .navbar-brand {
@@ -64,8 +90,25 @@ h3, h4, h5, h6, p {
             font-size: 2rem;
         }
     }
-
+    .titleGrouping {
+        // margin: 7%;
+        // padding: 7%;
+        h1 {
+            padding-top: 7%;
+        }
+        .titleImage {
+            // margin-right: 7% !important;
+            width: 500px;
+            height: auto;
+            opacity: .5;
+            z-index: 0;
+            position: absolute;
+        }
+    }
+    
     .contactButtons {
+        position: relative;
+        bottom: 10%;
         margin: 1rem;
         background-color: $oxford-blue;
         border: none;
@@ -99,6 +142,26 @@ h3, h4, h5, h6, p {
 
     }
 }
+@media screen and (min-width: 1028px) {
+    #title {
+        text-align: left;
+    }
+    .titleImage {
+
+    }
+    .estimateForm {
+        margin-right: 0 !important;
+        margin-top: 1rem !important;
+    }
+}
+@media screen and (max-width: 668px) {
+    #smallNavBrand {
+        display: none;
+    }
+}
+// Title Section END
+
+// Services Section START
 #services {
     background-color: $oxford-blue;
     padding: 3% 15% 7%;
@@ -109,7 +172,7 @@ h3, h4, h5, h6, p {
         padding: 3% 2%;
     }
     .card {
-        height: 335px;
+        height: 22rem;
     }
     .card-title {
         color: black;
@@ -122,13 +185,112 @@ h3, h4, h5, h6, p {
         width: 150px;
         height: auto;
     }
+    .serviceButton {
+
+    }
     
 }
+@media screen and (min-width: 992px) and (max-width: 1230px) {
+    .card-title {
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .modal {
+        width: 100vw;
+    }
+}
+// Services Setion END
+
+// Projects Section START
+#projects {
+
+    h2 {
+        color: black;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .img-fluid {
+        max-height: 400px;
+    }
+    .carousel-control-next {
+        // color: black;
+        // background-color: black;
+        // background: black;
+    }
+    .carousel-control-prev-icon {
+        color: black;
+        // background: black;
+        background-color: black;
+
+    }
+
+}
+// Projects Section END
+
+
+// Testimonitals Section START
 #testimonials {
     background-color: $onyx;
+    .testimonial-text {
+        // font-size: 3rem;
+        // line-height: 1.5;
+    }
+    .testimonial-image {
+        width: 10%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .testimonial-image {
+        width: 25% !important;
+    }
 }
 #contact {
-    background-color: $oxford-blue;
+    // background-color: $oxford-blue;
+    h4 {
+        font-size: 3rem;
+        font-family: $JockeyOne;
+    }
+    a {
+        font-size: 1.25rem;
+        font-family: $Open-Sans;
+    }
+    .socialLinks {
+        padding: 1%;
+        margin-top: 10px;
+        a {
+            padding: 8px;
+            &:hover {
+
+            }
+        }
+        .fa-twitter {
+            color: #1DA1F2;
+        }
+        .fa-linkedin {
+            color: #0077b5;
+        }
+        .fa-facebook {
+            color: #3b5998;
+        }
+        .fa-instagram {
+            // background-image: $instagram-radial;
+        
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fa-yelp {
+            color: #d32323;
+        }
+        .fa-pinterest {
+            color: #e60023;
+        }
+    }
 }
 
 // ipad and smaller
