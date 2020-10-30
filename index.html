@@ -125,6 +125,10 @@
             </h1>
             <p class="white-text"> We explain the process every step of the way. No matter what you need, we make sure it's done right - the first time. At the most competitve local rates, contact us for an estimate today.</p>
         </div>
+        <!-- 
+            This section is made up of columns of responsive cards. each card has a more info button.
+            this button opens up a vertically centered modal with that addition info
+         -->
         <div class="row">
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
@@ -133,7 +137,7 @@
                         <h2 class="card-title">Remodeling</h2>
                         <button type="button" data-toggle="modal" data-target="#remodelModal" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
                         <div class="modal fade" id="remodelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-dialog-centered">
                               <div class="modal-content">
                                 <div class="modal-header">
                                   <h5 class="modal-title" id="exampleModalLabel">Remodeling Services</h5>
@@ -205,9 +209,46 @@
     <!-- Projects Section -->
     <section id="projects" class="white-section">
         <!-- <div class="container-fluid"> -->
-        <div class="">
-            <h2>Recent Project Highlights</h2>
-            <div class="carousel">
+        <div class="container-fluid">
+            <div class="project-heading-text">
+                <h1>Recent Projects</h1>
+            </div>
+            <div class="service-col col-lg-6 col-md-12">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="fill">
+                    <div class="card-body">
+                        <h2 class="card-title">Bathroom Remodel</h2>
+                        <button type="button" data-toggle="modal" data-target="#project1Modal" class="btn btn-outline-dark btn-block">View Pictures</button>
+                        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="bathroomModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="bathroomModalLabel">Remodeling Services</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="">
+                                    <img class="img-fluid" src="images/projectsShowcase/bathroomRemodel_1/tinified/shower.jpg" alt="">
+                                    <img class="img-fluid" src="images/projectsShowcase/bathroomRemodel_1/tinified/sinks.jpg" alt="">
+                                    <img class="img-fluid" src="images/projectsShowcase/bathroomRemodel_1/tinified/tiling.jpg" alt="">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <div class="carousel">
+
+
                 <div id="projectsCarousel" class="carousel slide" data-ride="false" data-touch="true">
                     <ol class="carousel-indicators">
                         <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
@@ -254,11 +295,10 @@
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
-            </div>
-        </div>
+            </div> -->
     </section>
     <!-- Testimonials Section -->
-    <section id="testimonials" class="white-section">
+    <section id="testimonials">
         <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
             <ol class="carousel-indicators">
                 <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>

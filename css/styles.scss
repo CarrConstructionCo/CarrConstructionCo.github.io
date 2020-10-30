@@ -98,6 +98,7 @@ h3, h4, h5, h6, p {
         }
         .titleImage {
             // margin-right: 7% !important;
+            max-width: 100%;
             width: 500px;
             height: auto;
             opacity: .5;
@@ -154,10 +155,23 @@ h3, h4, h5, h6, p {
         margin-top: 1rem !important;
     }
 }
+// shortens navbar brand typography
 @media screen and (max-width: 668px) {
     #smallNavBrand {
         display: none;
     }
+}
+// this fixes overflow causing unwanted horizontal scrolling
+@media screen and (max-width: 730px) {
+    #title {
+        .titleImage {
+            max-width: 90%;
+            left: 10px;
+            position: relative;
+
+        }
+    }
+    
 }
 // Title Section END
 
@@ -205,24 +219,9 @@ h3, h4, h5, h6, p {
 // Projects Section START
 #projects {
 
-    h2 {
-        color: black;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-    .img-fluid {
-        max-height: 400px;
-    }
-    .carousel-control-next {
-        // color: black;
-        // background-color: black;
-        // background: black;
-    }
-    .carousel-control-prev-icon {
-        color: black;
-        // background: black;
-        background-color: black;
-
+    .project-heading-text {
+        padding: 10px;
+        margin-bottom: 5px;
     }
 
 }
@@ -246,6 +245,10 @@ h3, h4, h5, h6, p {
     .testimonial-image {
         width: 25% !important;
     }
+    .testimonial-text {
+        font-size: larger;
+    }
+
 }
 #contact {
     // background-color: $oxford-blue;
