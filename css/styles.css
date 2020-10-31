@@ -4,6 +4,9 @@
 body {
   text-align: center;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 h1, h2 {
   font-family: "Open Sans", sans-serif;
@@ -256,6 +259,11 @@ h3, h4, h5, h6, p {
   color: #e60023;
 }
 
+@media screen and (max-width: 600px) {
+  #contact .container-fluid {
+    padding: 0;
+  }
+}
 @media (max-width: 1028px) {
   #title {
     text-align: center;
