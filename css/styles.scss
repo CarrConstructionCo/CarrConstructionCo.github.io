@@ -31,8 +31,8 @@ $Montserrat: 'Montserrat', sans-serif;
 $JockeyOne: 'Jockey One', sans-serif;
 body {
     text-align: center;
-    // overflow: scroll;
-    // scrollbar-width: none;
+    overflow-x: hidden;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
         display: none;
     }
