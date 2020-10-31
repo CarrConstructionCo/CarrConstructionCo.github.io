@@ -91,6 +91,7 @@ h3, h4, h5, h6, p {
   margin: 1rem;
   background-color: #061a40ff;
   border: none;
+  -webkit-appearance: none;
 }
 #title .contactButtons i {
   margin-right: 0.7rem;
@@ -137,7 +138,7 @@ h3, h4, h5, h6, p {
 }
 @media screen and (max-width: 730px) {
   #title .titleImage {
-    max-width: 90%;
+    max-width: 80%;
     left: 10px;
     position: relative;
   }

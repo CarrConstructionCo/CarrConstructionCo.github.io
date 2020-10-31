@@ -126,6 +126,8 @@ h3, h4, h5, h6, p {
         margin: 1rem;
         background-color: $oxford-blue;
         border: none;
+        
+        -webkit-appearance: none;
         i {
             margin-right: .7rem;
         }
@@ -182,7 +184,7 @@ h3, h4, h5, h6, p {
 @media screen and (max-width: 730px) {
     #title {
         .titleImage {
-            max-width: 90%;
+            max-width: 80%;
             left: 10px;
             position: relative;
 
