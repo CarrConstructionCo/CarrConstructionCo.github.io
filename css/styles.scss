@@ -152,6 +152,10 @@ h3, h4, h5, h6, p {
                 color: $gray-x-11-gray;
                 opacity: 1;
             }
+            &[type=submit] {
+                font-weight: 600;
+                // background-color: red;
+            }
         }
 
     }

@@ -116,6 +116,9 @@ h3, h4, h5, h6, p {
   color: #bbbbbfff;
   opacity: 1;
 }
+#title .estimateForm input[type=submit], #title .estimateForm textarea[type=submit] {
+  font-weight: 600;
+}
 
 @media screen and (min-width: 1028px) {
   #title {
