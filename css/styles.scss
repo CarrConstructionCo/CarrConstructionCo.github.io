@@ -74,6 +74,17 @@ h3, h4, h5, h6, p {
     background-color: $honolulu-blue;
     border: none;
 }
+#toEstimateButton {
+    border-radius: 8px;
+    position: fixed;
+    bottom: 10px;
+    right: 45px;
+    z-index: 1;
+    // background-color: $honolulu-blue;
+    // border: none;
+    font-family: $Open-Sans;
+    font-weight: 700;
+}
 
 // Title Section START
 #title {
@@ -204,7 +215,8 @@ h3, h4, h5, h6, p {
     }
     
 }
-@media screen and (min-width: 992px) and (max-width: 1230px) {
+// @media screen and (min-width: 992px) and (max-width: 1230px) {
+@media screen and (max-width: 1038px) {
     .card-title {
         font-size: 1.5rem !important;
     }
@@ -220,12 +232,14 @@ h3, h4, h5, h6, p {
 #projects {
 
     .project-heading-text {
+        font-weight: 700;
+        font-size: 2.5rem;
         padding: 10px;
-        margin-bottom: 5px;
+        margin: 10px 0;
     }
     .card {
-        width: 60%;
-        height: auto;
+        // width: 60%;
+        // height: auto;
     }
     .projectModalImages {
         border-radius: 8px;
@@ -239,6 +253,17 @@ h3, h4, h5, h6, p {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
        }
 
+}
+@media screen and (max-width: 700px) {
+    #projects {
+        .project-heading-text {
+            font-size: 2rem !important;
+            font-weight: 700;
+        }
+        .card-title {
+            font-size: 1.5rem;
+        }
+    }
 }
 // Projects Section END
 
@@ -265,6 +290,9 @@ h3, h4, h5, h6, p {
     }
 
 }
+// Testimonials Section END
+
+// Contact Section START
 #contact {
     // background-color: $oxford-blue;
     h4 {

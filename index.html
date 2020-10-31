@@ -18,18 +18,22 @@
 
     <title>Carr Construction</title>
 
-    <script>
+    <!-- <script>
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
-    </script>
+    </script> -->
   </head>
   <body>
 
     <!-- To Top Button -->
     <a id="toTopButton" href="#title" type="button" class="btn btn-primary btn-circle btn-sm">
         <i class="fas fa-arrow-up"></i>
-        <!-- top -->
+    </a>
+    <!-- To Estimate Button -->
+    <a id="toEstimateButton" href="#estimate" type="button" class="btn btn-warning btn-sm">
+        <!-- <i class="fas fa-arrow-up"></i> -->
+        Estimate
     </a>
     <!-- Title Section -->
     <section id="title">
@@ -130,13 +134,14 @@
             this button opens up a vertically centered modal with that addition info
          -->
         <div class="row">
+            <!-- Service 0: Remodeling -->
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
                     <img class="card-img-top" src="images/vector_art/remodel.svg" alt="">
                     <div class="card-body">
                         <h2 class="card-title">Remodeling</h2>
-                        <button type="button" data-toggle="modal" data-target="#remodelModal" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
-                        <div class="modal fade" id="remodelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_0" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -150,6 +155,35 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-warning">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 1: Additions -->
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/3 houses.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Additions</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_1" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Home Additions</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum a culpa nemo, quasi placeat. Commodi, sed nihil ratione ex qui hic molestiae eius maiores ipsa eveniet tempore voluptate nulla?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
                                 </div>
                               </div>
@@ -158,48 +192,119 @@
                     </div>
                 </div>
             </div>
-            <div class="service-col col-lg-4 col-md-6">
-                <div class="card text-center">
-                    <img class="card-img-top" src="images/vector_art/3 houses.svg" alt="">
-                    <div class="card-body">
-                        <h2 class="card-title">Additions</h2>
-                        <button type="button" class="btn btn-outline-dark btn-block">More Info</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Service 2: Junk Removal -->
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
                     <img class="card-img-top" src="images/vector_art/moving boxes on dolly.svg" alt="">
                     <div class="card-body">
                         <h2 class="card-title">Junk Removal</h2>
-                        <button type="button" class="btn btn-outline-dark btn-block">More Info</button>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_2" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Junk Removal</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum a culpa nemo, quasi placeat. Commodi, sed nihil ratione ex qui hic molestiae eius maiores ipsa eveniet tempore voluptate nulla?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
+            <!-- Service 3: Painting -->
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
                     <img class="card-img-top" src="images/vector_art/picking out color.svg" alt="">
                     <div class="card-body">
                         <h2 class="card-title">Painting</h2>
-                        <button type="button" class="btn btn-outline-dark btn-block">More Info</button>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_2" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Painting</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum a culpa nemo, quasi placeat. Commodi, sed nihil ratione ex qui hic molestiae eius maiores ipsa eveniet tempore voluptate nulla?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
+            <!-- Service 4: Installations -->
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
                     <img class="card-img-top" src="images/vector_art/heavy box with stepcart.svg" alt="">
                     <div class="card-body">
                         <h2 class="card-title">Installations</h2>
-                        <button type="button" class="btn btn-outline-dark btn-block">More Info</button>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_2" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Installations</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum a culpa nemo, quasi placeat. Commodi, sed nihil ratione ex qui hic molestiae eius maiores ipsa eveniet tempore voluptate nulla?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
+            <!-- Service 5: Waste Mgmt -->
             <div class="service-col col-lg-4 col-md-6">
                 <div class="card text-center">
-                    <img class="card-img-top" src="images/vector_art/hardhat guy.svg" alt="fill">
+                    <img class="card-img-top" src="images/vector_art/hardhat guy.svg" alt="">
                     <div class="card-body">
                         <h2 class="card-title">Waste Mgmt.</h2>
-                        <button type="button" class="btn btn-outline-dark btn-block">More Info</button>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_2" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Waste Management</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum a culpa nemo, quasi placeat. Commodi, sed nihil ratione ex qui hic molestiae eius maiores ipsa eveniet tempore voluptate nulla?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -209,15 +314,14 @@
     <!-- Projects Section -->
     <section id="projects" class="white-section">
         <!-- <div class="container-fluid"> -->
-        <div class="container-fluid">
+        <div class="">
             <div class="project-heading-text">
-                <h1>Recent Projects</h1>
+                Recent Projects
             </div>
 
-            <div id="projectsCarousel" class="carousel slide" data-ride="false">
+            <div id="projectsCarousel" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
                   <div class="carousel-item active container-fluid">
-                    <!-- <div class="service-col col-lg-6 col-md-12"> -->
                     <div>
                         <div class="card text-center">
                             <img class="card-img-top" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="fill">
@@ -239,6 +343,41 @@
                                             <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/sinks.jpg" alt="">
                                             <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/tiling.jpg" alt="">
                                             
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- second project card -->
+                  <div class="carousel-item container-fluid">
+                    <div>
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="fill">
+                            <div class="card-body">
+                                <h2 class="card-title">Second Project</h2>
+                                <button type="button" data-toggle="modal" data-target="#project1Modal" class="btn btn-outline-dark btn-block">View Pictures</button>
+                                <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="bathroomModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="bathroomModalLabel">Second Project</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/shower.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/sinks.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/tiling.jpg" alt="">
+                                             -->
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -308,7 +447,7 @@
             <h4>Carr & Sons Construction Co.</h4>
             <a href="mailto:CarrConstructionCo.dev@gmail.com" type="button" class="btn btn-link">
                 <i class="far fa-envelope"></i>
-                email@gmail.com
+                CarrConstructionCo.dev@gmail.com
             </a>
             <br>
             <a href="tel:8126311272" type="button" class="btn btn-link">
