@@ -73,6 +73,7 @@ h3, h4, h5, h6, p {
     z-index: 1;
     background-color: $honolulu-blue;
     border: none;
+    -webkit-appearance: none;
 }
 #toEstimateButton {
     border-radius: 8px;
@@ -84,6 +85,7 @@ h3, h4, h5, h6, p {
     // border: none;
     font-family: $Open-Sans;
     font-weight: 700;
+    -webkit-appearance: none;
 }
 
 // Title Section START

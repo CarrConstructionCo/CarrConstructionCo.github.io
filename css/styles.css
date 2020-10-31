@@ -46,6 +46,7 @@ h3, h4, h5, h6, p {
   z-index: 1;
   background-color: #006daaff;
   border: none;
+  -webkit-appearance: none;
 }
 
 #toEstimateButton {
@@ -56,6 +57,7 @@ h3, h4, h5, h6, p {
   z-index: 1;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  -webkit-appearance: none;
 }
 
 #title {
