@@ -164,9 +164,9 @@ h3, h4, h5, h6, p {
                 // background-color: red;
             }
             &:focus {
-                background-color: white;
-                color: black;
-                
+                background-color: white !important;
+                color: black !important;
+
             }
         }
 
