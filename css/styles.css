@@ -125,6 +125,10 @@ h3, h4, h5, h6, p {
 #title .estimateForm input[type=submit], #title .estimateForm textarea[type=submit] {
   font-weight: 600;
 }
+#title .estimateForm input:focus, #title .estimateForm textarea:focus {
+  background-color: white;
+  color: black;
+}
 
 @media screen and (min-width: 1028px) {
   #title {
