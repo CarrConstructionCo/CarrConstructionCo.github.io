@@ -102,10 +102,15 @@ h3, h4, h5, h6, p {
     
     .navbar {
         padding: 1rem 0 4.5rem;
-        .navbar-brand {
-            color: $oxford-blue;
-            font-family: $JockeyOne;
-            font-size: 2rem;
+        // .navbar-brand {
+        //     color: $oxford-blue;
+        //     font-family: $JockeyOne;
+        //     font-size: 2rem;
+        // }
+
+        #logo {
+            width: 250px;
+            height: auto;
         }
     }
     .titleGrouping {

@@ -74,10 +74,9 @@ h3, h4, h5, h6, p {
 #title .navbar {
   padding: 1rem 0 4.5rem;
 }
-#title .navbar .navbar-brand {
-  color: #061a40ff;
-  font-family: "Jockey One", sans-serif;
-  font-size: 2rem;
+#title .navbar #logo {
+  width: 250px;
+  height: auto;
 }
 #title .titleGrouping h1 {
   padding-top: 7%;
